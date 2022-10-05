@@ -1,6 +1,6 @@
 #************************************
 # Written by: Naureen Naqvi
-# Notes: Code for Win Drift.
+# Notes: Code for WinDrift.
 # Copyright: Naureen Naqvi.
 #************************************
 
