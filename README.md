@@ -131,6 +131,19 @@ For window level W > 1, WinDrift aggregates W consecutive columns into a single 
 
 ---
 
+## Citation
+
+```bibtex
+@inproceedings{naqvi2022windrift,
+  title={WinDrift: Early Detection of Concept Drift Using Corresponding and Hierarchical Time Windows},
+  author={Naqvi, Naureen and Rehman, Sabih Ur and Islam, Md Zahidul},
+  booktitle={Australasian Conference on Data Mining},
+  pages={73--89},
+  year={2022},
+  organization={Springer}
+}
+```
+
 ## License
 
 MIT License. See [LICENSE](LICENSE).
