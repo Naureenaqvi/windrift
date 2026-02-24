@@ -4,9 +4,25 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **WinDrift** — Early Detection of Concept Drift Using Corresponding and Hierarchical Time Window.
-> N. Naqvi, S. U. Rehman, and M. Z. Islam
+> N. Naqvi, S. U. Rehman, and M. Z. Islam, “WinDrift: Early Detection of Concept Drift Using Corresponding and Hierarchical Time Windows,” in Australasian Conference on Data Mining. Australia: Springer, 2022, pp. 73–89.
+
 ---
 
+## 📄 Abstract
+In today's interconnected society, large volumes of time-series data are usually collected from real-time applications. This data is generally used for data-driven decision-making. With time, changes may emerge in the statistical characteristics of this data - this is also known as \textit{concept drift}. A concept drift can be detected using a concept drift detector. An ideal detector should detect drift accurately and efficiently. However, these properties may not be easy to achieve. To address this gap, a novel drift detection method \textit{WinDrift (WD)} is presented in this research. The foundation of WD is the early detection of concept drift using corresponding and hierarchical time windows. To assess drift, the proposed method uses two sample hypothesis tests with Kolmogorov-Smirnov (KS) statistical distance. These tests are carried out on sliding windows configured on multiple hierarchical levels that assess drift by comparing statistical distance between two windows of corresponding time period on each level. To evaluate the efficacy of WD, 4 real datasets and 10 reproducible synthetic datasets are used. A comparison with 5 existing state-of-the-art drift detection methods demonstrates that WinDrift detects drift efficiently with minimal false alarms and has efficient computational resource usage. 
+
+Synthetic datasets and the WD code designed for this work have been made publicly available at https://github.com/Naureenaqvi/windrift. 
+
+---
+
+## 💡 Impact Statement
+Modern data-driven systems increasingly rely on continuous time-series streams from real-time applications such as IoT sensing, smart infrastructure, finance, and cyber-security. In these settings, undetected or delayed concept drift can silently degrade predictive models, leading to unstable decisions, unnecessary retraining, and increased operational cost. This research introduced \textit{WinDrift (WD)} as an early and efficient drift detection technique designed specifically for long-running streaming environments with limited computational resources.
+
+The key impact of WinDrift lies in demonstrating that reliable and timely drift detection can be achieved without complex models or excessive computation. By exploiting corresponding and hierarchical time windows, WD enables earlier detection of meaningful distributional change while substantially reducing false alarms. This improves the stability of downstream learning systems and allows adaptation to be triggered only when truly necessary, preserving useful model structure over time.
+
+WinDrift provides a practical foundation for scalable stream-learning systems by balancing detection accuracy, responsiveness, and computational efficiency. Its lightweight design makes it suitable for continuous deployment in resource-constrained environments, where traditional detectors struggle to operate reliably. By releasing the implementation and benchmark datasets openly, this work also supports reproducible research and establishes a baseline upon which more advanced adaptive and context-aware drift regulation frameworks, including subsequent WinDrift extensions, are built.
+
+--- 
 ## Algorithm Overview
 
 WinDrift detects distributional change between time windows by computing the empirical CDF of each window and measuring the maximum absolute difference. If this exceeds a critical value, drift is flagged.
