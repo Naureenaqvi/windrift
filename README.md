@@ -16,7 +16,7 @@ Synthetic datasets and the WD code designed for this work have been made publicl
 ---
 
 ## 💡 Impact Statement
-Modern data-driven systems increasingly rely on continuous time-series streams from real-time applications such as IoT sensing, smart infrastructure, finance, and cyber-security. In these settings, undetected or delayed concept drift can silently degrade predictive models, leading to unstable decisions, unnecessary retraining, and increased operational cost. This research introduced \textit{WinDrift (WD)} as an early and efficient drift detection technique designed specifically for long-running streaming environments with limited computational resources.
+Modern data-driven systems increasingly rely on continuous time-series streams from real-time applications such as IoT sensing, smart infrastructure, finance, and cyber-security. In these settings, undetected or delayed concept drift can silently degrade predictive models, leading to unstable decisions, unnecessary retraining, and increased operational cost. This research introduced _WinDrift (WD)_ as an early and efficient drift detection technique designed specifically for long-running streaming environments with limited computational resources.
 
 The key impact of WinDrift lies in demonstrating that reliable and timely drift detection can be achieved without complex models or excessive computation. By exploiting corresponding and hierarchical time windows, WD enables earlier detection of meaningful distributional change while substantially reducing false alarms. This improves the stability of downstream learning systems and allows adaptation to be triggered only when truly necessary, preserving useful model structure over time.
 
